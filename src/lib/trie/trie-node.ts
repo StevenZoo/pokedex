@@ -1,6 +1,6 @@
 class TrieNode {
   children: Array<Nullable<TrieNode>>;
-  id: number | null;
+  id: Nullable<number>;
 
   constructor() {
     this.children = [];

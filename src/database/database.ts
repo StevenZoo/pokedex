@@ -7,7 +7,7 @@ class Database {
 
   constructor() {
     this.loadPokemonData();
-    this.loadNameIndex();
+    this.loadNamesIndex();
   }
 
   private loadPokemonData() {

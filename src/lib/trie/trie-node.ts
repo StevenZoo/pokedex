@@ -1,6 +1,8 @@
+import { Nullable } from "../../types/global";
+
 class TrieNode {
   children: Array<Nullable<TrieNode>>;
-  id: Nullable<number>;
+  id: Nullable<string>;
 
   constructor() {
     this.children = [];

@@ -2,13 +2,14 @@
     "compilerOptions": {
       "target": "es6",
       "module": "commonjs",
-      "rootDir": "./",
+      "rootDir": ".",
       "outDir": "./build",
       "esModuleInterop": true,
       "strict": true,
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "test/**/*.ts"
     ],
     "exclude": [
         "node_modules"

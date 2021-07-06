@@ -1,23 +1,23 @@
-import { getAsciiOffset, getAsciiChar } from "../../src/util/ascii-converter";
+import { getAsciiCode, getAsciiChar } from "../../src/util/ascii-converter";
 
-describe("Trie test", () => {
+describe("Convert letter to ascii code", () => {
   it("Ascii code of a:", () => {
-    expect(getAsciiOffset("a")).toBe(0);
+    expect(getAsciiCode("a")).toBe(97);
   });
 
   it("Ascii code of b:", () => {
-    expect(getAsciiOffset("b")).toBe(1);
+    expect(getAsciiCode("b")).toBe(98);
   });
 
   it("Ascii code of c:", () => {
-    expect(getAsciiOffset("c")).toBe(2);
+    expect(getAsciiCode("c")).toBe(99);
   });
 
   it("Ascii code of y:", () => {
-    expect(getAsciiOffset("y")).toBe(24);
+    expect(getAsciiCode("y")).toBe(121);
   });
 
   it("Ascii code of z:", () => {
-    expect(getAsciiOffset("z")).toBe(25);
+    expect(getAsciiCode("z")).toBe(122);
   });
 });

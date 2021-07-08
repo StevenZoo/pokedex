@@ -1,7 +1,7 @@
 import database from "../database/database";
 
 class NamesDatastore {
-  public getIdByName(name: string) {
+  public findPokemonId(name: string) {
     return database.namesIndex[name];
   }
 

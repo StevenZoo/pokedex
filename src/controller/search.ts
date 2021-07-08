@@ -5,7 +5,7 @@ function clean(query: string): string {
     return query.toLowerCase().replace(/\s/g, '');
 }
 
-function autoComplete(query: string) {
+function autocomplete(query: string) {
     query = clean(query);
     return searchService.findNamesWithMatchingPrefix(query);
 }
@@ -19,4 +19,4 @@ function search(query: string) {
     return pokemonDataStore.get(closestMatches[0]);
 }
 
-export {autoComplete, search};
+export {autocomplete, search};

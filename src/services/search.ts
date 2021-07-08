@@ -1,5 +1,5 @@
-import pokemonDataStore from "../repository/pokemon";
-import namesDataStore from "../repository/names";
+import { getPokemon } from "../services/pokemon";
+import { lookUpAllPokemonIds } from "../repository/pokemon-index";
 import Trie from "../lib/trie/trie";
 
 class SearchService {
@@ -11,31 +11,30 @@ class SearchService {
 
   private buildTrie() {
     const trie = new Trie();
-    const names: Array<string> = namesDataStore.getAllNames();
-    for (let name of names) {
-      let id = namesDataStore.findPokemonId(name);
-      trie.put(name, id);
-    }
+    const entries: Array<Array<string>> = lookUpAllPokemonIds();
+    trie.putAll(entries);
     return trie;
   }
 
   public findNamesWithMatchingPrefix(prefix: string): Array<string> {
     if (prefix == null) return [];
 
-    let matchingIds: Set<string> = this.names.searchIdsByPrefix(prefix);
-    let matches: Array<string> = [...matchingIds]
-      .map((id) => pokemonDataStore.get(id)?.name)
-      .filter((name) => name !== undefined)
-      .sort() as Array<string>;
-
-    return matches;
+    let matchingIds: Set<string> = this.names.searchIdsMatchingPrefix(prefix);
+    return this.mapToNames([...matchingIds]);
   }
 
   public findIdsWithMatchingPrefix(prefix: string): Array<string> {
     if (prefix == null) return [];
 
-    let matchingIds: Set<string> = this.names.searchIdsByPrefix(prefix);
-    return [...matchingIds]
+    let matchingIds: Set<string> = this.names.searchIdsMatchingPrefix(prefix);
+    return [...matchingIds];
+  }
+
+  private mapToNames(ids: Array<string>): Array<string> {
+    return ids
+      .map((id) => getPokemon(id)?.name)
+      .filter((name) => name !== undefined)
+      .sort() as Array<string>;
   }
 }
 

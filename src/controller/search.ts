@@ -9,6 +9,7 @@ function clean(query: string): string {
 
 function autocomplete(query: string): Array<string> {
   query = clean(query);
+  if(query === "") return [];
   return searchService
     .findIdsWithMatchingPrefix(query)
     .map((id) => getPokemon(id)?.name)
@@ -17,6 +18,7 @@ function autocomplete(query: string): Array<string> {
 
 function search(query: string): Nullable<Pokemon> {
   query = clean(query);
+  if(query === "") return null;
   let pokemon = getPokemon(query);
   if (pokemon != null) return pokemon;
 

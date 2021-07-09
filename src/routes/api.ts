@@ -11,7 +11,7 @@ router.get("/autocomplete", (req, res) => {
   }
 
   let results = autocomplete(query);
-  res.send({ result: results });
+  res.send(results);
 });
 
 router.get("/search", (req, res) => {
@@ -21,8 +21,8 @@ router.get("/search", (req, res) => {
     return;
   }
 
-  let results = search(query);
-  res.send({ result: results });
+  let result = search(query);
+  res.send(result);
 });
 
 module.exports = router;

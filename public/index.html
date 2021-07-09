@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <input id="search-bar" type="text" name="pokemon" autocomplete="off" />
+    <ul id="suggestions"></ul>
+
+    <script>
+      function createElement(el, options) {
+        let element = document.createElement(el);
+        let entries = Object.entries(options);
+        for (let [property, value] of entries) {
+          element[property] = value;
+        }
+        return element;
+      }
+
+      function toUrlString(endpoint, queryParams) {
+        let url = new URL(endpoint, window.location.origin);
+        url.search = new URLSearchParams(queryParams);
+        return url.toString();
+      }
+
+      const suggestions = document.getElementById("suggestions");
+      const searchBar = document.getElementById("search-bar");
+
+      async function getSuggestions() {
+        let url = toUrlString("/api/autocomplete", { q: searchBar.value });
+        let response = await fetch(urlString);
+
+        if (response.ok) {
+          return await response.json();
+        } else {
+          console.error("Error: " + response.status);
+        }
+        return [];
+      }
+
+      function updateSuggestions() {
+        getSuggestions().then((json) => {
+          console.log(json);
+          let newSuggestions = json.map((item) =>
+            createElement("li", { innerText: item })
+          );
+
+          suggestions.replaceChildren(...newSuggestions);
+        });
+      }
+
+      searchBar.addEventListener("input", updateSuggestions);
+    </script>
+
+    <script></script>
+  </body>
+</html>

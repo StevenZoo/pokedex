@@ -1,755 +1,906 @@
 {
   "1": {
+    "id": 1,
     "name": "bulbasaur",
     "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
     "type": ["grass", "poison"]
   },
   "2": {
+    "id": 2,
     "name": "ivysaur",
     "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
     "type": ["grass", "poison"]
   },
   "3": {
+    "id": 3,
     "name": "venusaur",
     "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
     "type": ["grass", "poison"]
   },
   "4": {
+    "id": 4,
     "name": "charmander",
     "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
     "type": ["fire"]
   },
   "5": {
+    "id": 5,
     "name": "charmeleon",
     "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
     "type": ["fire"]
   },
   "6": {
+    "id": 6,
     "name": "charizard",
     "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
     "type": ["fire", "flying"]
   },
   "7": {
+    "id": 7,
     "name": "squirtle",
     "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
     "type": ["water"]
   },
   "8": {
+    "id": 8,
     "name": "wartortle",
     "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
     "type": ["water"]
   },
   "9": {
+    "id": 9,
     "name": "blastoise",
     "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
     "type": ["water"]
   },
   "10": {
+    "id": 10,
     "name": "caterpie",
     "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
     "type": ["bug"]
   },
   "11": {
+    "id": 11,
     "name": "metapod",
     "description": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
     "type": ["bug"]
   },
   "12": {
+    "id": 12,
     "name": "butterfree",
     "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
     "type": ["bug", "flying"]
   },
   "13": {
+    "id": 13,
     "name": "weedle",
     "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
     "type": ["bug", "poison"]
   },
   "14": {
+    "id": 14,
     "name": "kakuna",
     "description": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
     "type": ["bug", "poison"]
   },
   "15": {
+    "id": 15,
     "name": "beedrill",
     "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
     "type": ["bug", "poison"]
   },
   "16": {
+    "id": 16,
     "name": "pidgey",
     "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
     "type": ["normal", "flying"]
   },
   "17": {
+    "id": 17,
     "name": "pidgeotto",
     "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
     "type": ["normal", "flying"]
   },
   "18": {
+    "id": 18,
     "name": "pidgeot",
     "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
     "type": ["normal", "flying"]
   },
   "19": {
+    "id": 19,
     "name": "rattata",
     "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
     "type": ["normal"]
   },
   "20": {
+    "id": 20,
     "name": "raticate",
     "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
     "type": ["normal"]
   },
   "21": {
+    "id": 21,
     "name": "spearow",
     "description": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
     "type": ["normal", "flying"]
   },
   "22": {
+    "id": 22,
     "name": "fearow",
     "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
     "type": ["normal", "flying"]
   },
   "23": {
+    "id": 23,
     "name": "ekans",
     "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
     "type": ["poison"]
   },
   "24": {
+    "id": 24,
     "name": "arbok",
     "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
     "type": ["poison"]
   },
   "25": {
+    "id": 25,
     "name": "pikachu",
     "description": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
     "type": ["electric"]
   },
   "26": {
+    "id": 26,
     "name": "raichu",
     "description": "Its long tail serves as a ground to protect itself from its own high voltage power.",
     "type": ["electric"]
   },
   "27": {
+    "id": 27,
     "name": "sandshrew",
     "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
     "type": ["ground"]
   },
   "28": {
+    "id": 28,
     "name": "sandslash",
     "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
     "type": ["ground"]
   },
   "29": {
+    "id": 29,
     "name": "nidoran-f",
     "description": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
     "type": ["poison"]
   },
   "30": {
+    "id": 30,
     "name": "nidorina",
     "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
     "type": ["poison"]
   },
   "31": {
+    "id": 31,
     "name": "nidoqueen",
     "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
     "type": ["poison", "ground"]
   },
   "32": {
+    "id": 32,
     "name": "nidoran-m",
     "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
     "type": ["poison"]
   },
   "33": {
+    "id": 33,
     "name": "nidorino",
     "description": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
     "type": ["poison"]
   },
   "34": {
+    "id": 34,
     "name": "nidoking",
     "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
     "type": ["poison", "ground"]
   },
   "35": {
+    "id": 35,
     "name": "clefairy",
     "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
     "type": ["fairy"]
   },
   "36": {
+    "id": 36,
     "name": "clefable",
     "description": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
     "type": ["fairy"]
   },
   "37": {
+    "id": 37,
     "name": "vulpix",
     "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
     "type": ["fire"]
   },
   "38": {
+    "id": 38,
     "name": "ninetales",
     "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
     "type": ["fire"]
   },
   "39": {
+    "id": 39,
     "name": "jigglypuff",
     "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
     "type": ["normal", "fairy"]
   },
   "40": {
+    "id": 40,
     "name": "wigglytuff",
     "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
     "type": ["normal", "fairy"]
   },
   "41": {
+    "id": 41,
     "name": "zubat",
     "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
     "type": ["poison", "flying"]
   },
   "42": {
+    "id": 42,
     "name": "golbat",
     "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
     "type": ["poison", "flying"]
   },
   "43": {
+    "id": 43,
     "name": "oddish",
     "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
     "type": ["grass", "poison"]
   },
   "44": {
+    "id": 44,
     "name": "gloom",
     "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
     "type": ["grass", "poison"]
   },
   "45": {
+    "id": 45,
     "name": "vileplume",
     "description": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
     "type": ["grass", "poison"]
   },
   "46": {
+    "id": 46,
     "name": "paras",
     "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
     "type": ["bug", "grass"]
   },
   "47": {
+    "id": 47,
     "name": "parasect",
     "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
     "type": ["bug", "grass"]
   },
   "48": {
+    "id": 48,
     "name": "venonat",
     "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
     "type": ["bug", "poison"]
   },
   "49": {
+    "id": 49,
     "name": "venomoth",
     "description": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
     "type": ["bug", "poison"]
   },
   "50": {
+    "id": 50,
     "name": "diglett",
     "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
     "type": ["ground"]
   },
   "51": {
+    "id": 51,
     "name": "dugtrio",
     "description": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
     "type": ["ground"]
   },
   "52": {
+    "id": 52,
     "name": "meowth",
     "description": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
     "type": ["normal"]
   },
   "53": {
+    "id": 53,
     "name": "persian",
     "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
     "type": ["normal"]
   },
   "54": {
+    "id": 54,
     "name": "psyduck",
     "description": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
     "type": ["water"]
   },
   "55": {
+    "id": 55,
     "name": "golduck",
     "description": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
     "type": ["water"]
   },
   "56": {
+    "id": 56,
     "name": "mankey",
     "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
     "type": ["fighting"]
   },
   "57": {
+    "id": 57,
     "name": "primeape",
     "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
     "type": ["fighting"]
   },
   "58": {
+    "id": 58,
     "name": "growlithe",
     "description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
     "type": ["fire"]
   },
   "59": {
+    "id": 59,
     "name": "arcanine",
     "description": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
     "type": ["fire"]
   },
   "60": {
+    "id": 60,
     "name": "poliwag",
     "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
     "type": ["water"]
   },
   "61": {
+    "id": 61,
     "name": "poliwhirl",
     "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
     "type": ["water"]
   },
   "62": {
+    "id": 62,
     "name": "poliwrath",
     "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
     "type": ["water", "fighting"]
   },
   "63": {
+    "id": 63,
     "name": "abra",
     "description": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
     "type": ["psychic"]
   },
   "64": {
+    "id": 64,
     "name": "kadabra",
     "description": "It emits special alpha waves from its body that induce headaches just by being close by.",
     "type": ["psychic"]
   },
   "65": {
+    "id": 65,
     "name": "alakazam",
     "description": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
     "type": ["psychic"]
   },
   "66": {
+    "id": 66,
     "name": "machop",
     "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
     "type": ["fighting"]
   },
   "67": {
+    "id": 67,
     "name": "machoke",
     "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
     "type": ["fighting"]
   },
   "68": {
+    "id": 68,
     "name": "machamp",
     "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
     "type": ["fighting"]
   },
   "69": {
+    "id": 69,
     "name": "bellsprout",
     "description": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
     "type": ["grass", "poison"]
   },
   "70": {
+    "id": 70,
     "name": "weepinbell",
     "description": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
     "type": ["grass", "poison"]
   },
   "71": {
+    "id": 71,
     "name": "victreebel",
     "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
     "type": ["grass", "poison"]
   },
   "72": {
+    "id": 72,
     "name": "tentacool",
     "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
     "type": ["water", "poison"]
   },
   "73": {
+    "id": 73,
     "name": "tentacruel",
     "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
     "type": ["water", "poison"]
   },
   "74": {
+    "id": 74,
     "name": "geodude",
     "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
     "type": ["rock", "ground"]
   },
   "75": {
+    "id": 75,
     "name": "graveler",
     "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
     "type": ["rock", "ground"]
   },
   "76": {
+    "id": 76,
     "name": "golem",
     "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
     "type": ["rock", "ground"]
   },
   "77": {
+    "id": 77,
     "name": "ponyta",
     "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
     "type": ["fire"]
   },
   "78": {
+    "id": 78,
     "name": "rapidash",
     "description": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
     "type": ["fire"]
   },
   "79": {
+    "id": 79,
     "name": "slowpoke",
     "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
     "type": ["water", "psychic"]
   },
   "80": {
+    "id": 80,
     "name": "slowbro",
     "description": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
     "type": ["water", "psychic"]
   },
   "81": {
+    "id": 81,
     "name": "magnemite",
     "description": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
     "type": ["electric", "steel"]
   },
   "82": {
+    "id": 82,
     "name": "magneton",
     "description": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
     "type": ["electric", "steel"]
   },
   "83": {
+    "id": 83,
     "name": "farfetchd",
     "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
     "type": ["normal", "flying"]
   },
   "84": {
+    "id": 84,
     "name": "doduo",
     "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
     "type": ["normal", "flying"]
   },
   "85": {
+    "id": 85,
     "name": "dodrio",
     "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
     "type": ["normal", "flying"]
   },
   "86": {
+    "id": 86,
     "name": "seel",
     "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
     "type": ["water"]
   },
   "87": {
+    "id": 87,
     "name": "dewgong",
     "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
     "type": ["water", "ice"]
   },
   "88": {
+    "id": 88,
     "name": "grimer",
     "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
     "type": ["poison"]
   },
   "89": {
+    "id": 89,
     "name": "muk",
     "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
     "type": ["poison"]
   },
   "90": {
+    "id": 90,
     "name": "shellder",
     "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
     "type": ["water"]
   },
   "91": {
+    "id": 91,
     "name": "cloyster",
     "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
     "type": ["water", "ice"]
   },
   "92": {
+    "id": 92,
     "name": "gastly",
     "description": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
     "type": ["ghost", "poison"]
   },
   "93": {
+    "id": 93,
     "name": "haunter",
     "description": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
     "type": ["ghost", "poison"]
   },
   "94": {
+    "id": 94,
     "name": "gengar",
     "description": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
     "type": ["ghost", "poison"]
   },
   "95": {
+    "id": 95,
     "name": "onix",
     "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
     "type": ["rock", "ground"]
   },
   "96": {
+    "id": 96,
     "name": "drowzee",
     "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
     "type": ["psychic"]
   },
   "97": {
+    "id": 97,
     "name": "hypno",
     "description": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
     "type": ["psychic"]
   },
   "98": {
+    "id": 98,
     "name": "krabby",
     "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
     "type": ["water"]
   },
   "99": {
+    "id": 99,
     "name": "kingler",
     "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
     "type": ["water"]
   },
   "100": {
+    "id": 100,
     "name": "voltorb",
     "description": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
     "type": ["electric"]
   },
   "101": {
+    "id": 101,
     "name": "electrode",
     "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
     "type": ["electric"]
   },
   "102": {
+    "id": 102,
     "name": "exeggcute",
     "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
     "type": ["grass", "psychic"]
   },
   "103": {
+    "id": 103,
     "name": "exeggutor",
     "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
     "type": ["grass", "psychic"]
   },
   "104": {
+    "id": 104,
     "name": "cubone",
     "description": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
     "type": ["ground"]
   },
   "105": {
+    "id": 105,
     "name": "marowak",
     "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
     "type": ["ground"]
   },
   "106": {
+    "id": 106,
     "name": "hitmonlee",
     "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
     "type": ["fighting"]
   },
   "107": {
+    "id": 107,
     "name": "hitmonchan",
     "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
     "type": ["fighting"]
   },
   "108": {
+    "id": 108,
     "name": "lickitung",
     "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
     "type": ["normal"]
   },
   "109": {
+    "id": 109,
     "name": "koffing",
     "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
     "type": ["poison"]
   },
   "110": {
+    "id": 110,
     "name": "weezing",
     "description": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
     "type": ["poison"]
   },
   "111": {
+    "id": 111,
     "name": "rhyhorn",
     "description": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying.",
     "type": ["ground", "rock"]
   },
   "112": {
+    "id": 112,
     "name": "rhydon",
     "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
     "type": ["ground", "rock"]
   },
   "113": {
+    "id": 113,
     "name": "chansey",
     "description": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
     "type": ["normal"]
   },
   "114": {
+    "id": 114,
     "name": "tangela",
     "description": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
     "type": ["grass"]
   },
   "115": {
+    "id": 115,
     "name": "kangaskhan",
     "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
     "type": ["normal"]
   },
   "116": {
+    "id": 116,
     "name": "horsea",
     "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
     "type": ["water"]
   },
   "117": {
+    "id": 117,
     "name": "seadra",
     "description": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
     "type": ["water"]
   },
   "118": {
+    "id": 118,
     "name": "goldeen",
     "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
     "type": ["water"]
   },
   "119": {
+    "id": 119,
     "name": "seaking",
     "description": "In the autumn spawning season, they can be seen swimming power­ fully up rivers and creeks.",
     "type": ["water"]
   },
   "120": {
+    "id": 120,
     "name": "staryu",
     "description": "An enigmatic POKéMON that can effortlessly regenerate any appendage it loses in battle.",
     "type": ["water"]
   },
   "121": {
+    "id": 121,
     "name": "starmie",
     "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
     "type": ["water", "psychic"]
   },
   "122": {
+    "id": 122,
     "name": "mr-mime",
     "description": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
     "type": ["psychic", "fairy"]
   },
   "123": {
+    "id": 123,
     "name": "scyther",
     "description": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
     "type": ["bug", "flying"]
   },
   "124": {
+    "id": 124,
     "name": "jynx",
     "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
     "type": ["ice", "psychic"]
   },
   "125": {
+    "id": 125,
     "name": "electabuzz",
     "description": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
     "type": ["electric"]
   },
   "126": {
+    "id": 126,
     "name": "magmar",
     "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
     "type": ["fire"]
   },
   "127": {
+    "id": 127,
     "name": "pinsir",
     "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
     "type": ["bug"]
   },
   "128": {
+    "id": 128,
     "name": "tauros",
     "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
     "type": ["normal"]
   },
   "129": {
+    "id": 129,
     "name": "magikarp",
     "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
     "type": ["water"]
   },
   "130": {
+    "id": 130,
     "name": "gyarados",
     "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
     "type": ["water", "flying"]
   },
   "131": {
+    "id": 131,
     "name": "lapras",
     "description": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
     "type": ["water", "ice"]
   },
   "132": {
+    "id": 132,
     "name": "ditto",
     "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
     "type": ["normal"]
   },
   "133": {
+    "id": 133,
     "name": "eevee",
     "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
     "type": ["normal"]
   },
   "134": {
+    "id": 134,
     "name": "vaporeon",
     "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
     "type": ["water"]
   },
   "135": {
+    "id": 135,
     "name": "jolteon",
     "description": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
     "type": ["electric"]
   },
   "136": {
+    "id": 136,
     "name": "flareon",
     "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
     "type": ["fire"]
   },
   "137": {
+    "id": 137,
     "name": "porygon",
     "description": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
     "type": ["normal"]
   },
   "138": {
+    "id": 138,
     "name": "omanyte",
     "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
     "type": ["rock", "water"]
   },
   "139": {
+    "id": 139,
     "name": "omastar",
     "description": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
     "type": ["rock", "water"]
   },
   "140": {
+    "id": 140,
     "name": "kabuto",
     "description": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
     "type": ["rock", "water"]
   },
   "141": {
+    "id": 141,
     "name": "kabutops",
     "description": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
     "type": ["rock", "water"]
   },
   "142": {
+    "id": 142,
     "name": "aerodactyl",
     "description": "A ferocious, pre­ historic POKéMON that goes for the enemy's throat with its serrated saw-like fangs.",
     "type": ["rock", "flying"]
   },
   "143": {
+    "id": 143,
     "name": "snorlax",
     "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
     "type": ["normal"]
   },
   "144": {
+    "id": 144,
     "name": "articuno",
     "description": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
     "type": ["ice", "flying"]
   },
   "145": {
+    "id": 145,
     "name": "zapdos",
     "description": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
     "type": ["electric", "flying"]
   },
   "146": {
+    "id": 146,
     "name": "moltres",
     "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
     "type": ["fire", "flying"]
   },
   "147": {
+    "id": 147,
     "name": "dratini",
     "description": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
     "type": ["dragon"]
   },
   "148": {
+    "id": 148,
     "name": "dragonair",
     "description": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
     "type": ["dragon"]
   },
   "149": {
+    "id": 149,
     "name": "dragonite",
     "description": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
     "type": ["dragon", "flying"]
   },
   "150": {
+    "id": 150,
     "name": "mewtwo",
     "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
     "type": ["psychic"]
   },
   "151": {
+    "id": 151,
     "name": "mew",
     "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
     "type": ["psychic"]

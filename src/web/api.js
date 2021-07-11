@@ -18,7 +18,6 @@ async function getSuggestions(query) {
 
 async function getSearchResult(query) {
   let url = toUrlString("/api/search", { q: query });
-  console.log("Fetching " + url);
   let response = await fetch(url);
 
   if (response.ok) {

@@ -39,18 +39,13 @@ const nameElement = document.getElementById("name");
 const typesElement = document.getElementById("types");
 const pokemonPicture = document.getElementById("pokemon-picture");
 
-searchBar.addEventListener("input", renderSuggestions);
-searchBar.addEventListener("focus", () => {
-  showSuggestions();
-});
+pageWrapper.addEventListener("click", hideSuggestions);
 
+searchBar.addEventListener("input", renderSuggestions);
+searchBar.addEventListener("focus", showSuggestions);
 searchBar.addEventListener("click", (e) => {
   e.stopPropagation();
   showSuggestions();
-});
-
-pageWrapper.addEventListener("click", (e) => {
-  hideSuggestions();
 });
 
 suggestions.addEventListener("click", function (e) {

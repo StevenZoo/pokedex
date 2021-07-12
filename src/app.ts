@@ -4,6 +4,7 @@ let api = require("./routes/api");
 const app = express();
 const PORT = 3000;
 
+app.use(express.static('public'))
 app.use("/api", api);
 
 app.listen(PORT, () => {

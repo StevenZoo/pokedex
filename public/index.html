@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page-wrapper" class="page-wrapper">
+      <div class="search-wrapper">
+        <input id="search-bar" type="text" name="pokemon" placeholder="Search for a Pokémon" autocomplete="off" />
+        <ul id="suggestions" class="suggestions hide"></ul>
+      </div>
+      <div id="results">
+        <div class="information">
+          <div id="pokemon-id" class="pokemon-id"></div>
+          <h2 id="name" class="name"></h2>
+          <div id="types" class="types"></div>
+          <div id="description" class="description"></div>
+        </div>
+        <div class="picture">
+          <img id="pokemon-picture" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

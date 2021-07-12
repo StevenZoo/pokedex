@@ -11,10 +11,13 @@ function createElement(el, options = {}, classes = []) {
   return element;
 }
 
-function AutocompleteSuggestion(query) {
-    return createElement("li", { innerText: query, id: query }, ["suggestion"]);
+function AutocompleteSuggestion(query, highlighted) {
+  let classList = ["suggestion"];
+  if (highlighted) {
+    classList.push("active");
   }
-  
+  return createElement("li", { innerText: query, id: query }, classList);
+}
 
 function Type(type) {
   return createElement("div", { textContent: type }, ["type", type]);

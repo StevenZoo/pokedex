@@ -176,18 +176,20 @@ body {
 .suggestion {
   padding: 1.25rem;
   line-height: 1.5rem;
-}
-
-.suggestion:nth-child(odd) {
-  background: lightgray;
+  background-color: white;
 }
 
 .suggestion:nth-child(even) {
-  background: white;
+  border-top: solid 1px rgb(233, 231, 231, 0.5);
+  border-bottom: solid 1px rgb(233, 231, 231, 0.5);
+}
+
+.suggestion.active {
+  border: solid 2px rgba(137, 203, 230, 0.8);
 }
 
 .suggestion:hover {
-  background-color: gray;
+  background-color: rgb(231, 224, 224);
 }
 
 .type.normal {

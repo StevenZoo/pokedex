@@ -7,6 +7,7 @@ import { loadSearchResults } from "../datastore/SearchStore";
 function hideSuggestions() {
   suggestions.classList.add("hide");
   autocomplete.highlight(undefined);
+  autocomplete.render([]);
 }
 
 function showSuggestions() {
@@ -35,11 +36,13 @@ function search(query) {
 
 // Update autocomplete suggestions as user types
 searchBar.addEventListener("input", () => {
+  showSuggestions();
   loadAutocompleteSuggestions(searchBar.value);
 });
 
 searchBar.addEventListener("focus", () => {
   showSuggestions();
+  loadAutocompleteSuggestions(searchBar.value);
 });
 
 // Search for the item that was clicked on.

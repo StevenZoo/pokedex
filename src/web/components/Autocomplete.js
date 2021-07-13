@@ -7,6 +7,7 @@ class Autocomplete {
   data = [];
 
   render(data) {
+    if (data === undefined) return;
     this.data = data;
     this._rerenderWithNewHighlight();
   }
@@ -39,7 +40,7 @@ class Autocomplete {
 
   scrollToElement(element) {
     if (element !== undefined) {
-      element.scrollIntoView({ block: "center" });
+      element.scrollIntoView({ block: "nearest", inline: "nearest" });
     }
   }
 

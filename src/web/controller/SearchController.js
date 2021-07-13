@@ -2,16 +2,17 @@ import { autocomplete } from "../components/Autocomplete";
 import { searchBar, suggestions } from "../util/dom-references";
 import { loadAutocompleteSuggestions } from "../datastore/AutocompleteStore";
 import { loadSearchResults } from "../datastore/SearchStore";
+import { renderSearchResult } from "../components/SearchResult";
+import { hideErrorMessage, showErrorMessage } from "../components/ErrorMessage";
 
 // Hide drop down menu and remove highlighted items
 function hideSuggestions() {
-  suggestions.classList.add("hide");
+  suggestions.classList.add("no-display");
   autocomplete.highlight(undefined);
-  autocomplete.render([]);
 }
 
 function showSuggestions() {
-  suggestions.classList.remove("hide");
+  suggestions.classList.remove("no-display");
 }
 
 // Handle user navigation via arrow keys
@@ -30,14 +31,22 @@ function search(query) {
     query = autocomplete.getHighlightedSuggestion() || searchBar.value;
   }
   searchBar.value = query;
-  loadSearchResults(query);
   hideSuggestions();
+  loadSearchResults(query)
+    .then((data) => {
+      renderSearchResult(data);
+      hideErrorMessage();
+    })
+    .catch((err) => {
+      showErrorMessage();
+      autocomplete.render([]);
+    });
 }
 
 // Update autocomplete suggestions as user types
 searchBar.addEventListener("input", () => {
   showSuggestions();
-  loadAutocompleteSuggestions(searchBar.value);
+  loadAutocompleteSuggestions(searchBar.value).then((data) => autocomplete.render(data));
 });
 
 searchBar.addEventListener("focus", () => {

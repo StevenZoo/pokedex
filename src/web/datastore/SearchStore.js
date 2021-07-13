@@ -1,5 +1,4 @@
 import { getSearchResult } from "../api/api";
-import { renderSearchResult } from "../components/SearchResult";
 
 let searchResultSequenceNumber = 0;
 let searchResultLatestRead = 0;
@@ -7,16 +6,18 @@ const searchResultsCache = {};
 
 function loadSearchResults(query) {
   if (searchResultsCache[query] !== undefined) {
-    renderSearchResult(searchResultsCache[query]);
+    return Promise.resolve(searchResultsCache[query]);
   }
 
   let requestId = searchResultSequenceNumber;
   searchResultSequenceNumber++;
-  getSearchResult(query).then((data) => {
+
+  return getSearchResult(query).then((data) => {
     if (requestId >= searchResultLatestRead) {
-      renderSearchResult(data);
+      if (data === null) return null;
+      searchResultsCache[query] = data;
+      return data;
     }
-    searchResultsCache[query] = data;
   });
 }
 

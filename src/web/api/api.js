@@ -10,10 +10,6 @@ async function getSuggestions(query) {
 
   if (response.ok) {
     return await response.json();
-  } else {
-    if (response.status >= 400) {
-      throw new Error("Something went wrong.");
-    }
   }
   return [];
 }

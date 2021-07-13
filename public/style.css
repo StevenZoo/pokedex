@@ -49,6 +49,7 @@ ul,
 li,
 fieldset,
 form,
+input,
 label,
 legend,
 table,
@@ -84,10 +85,6 @@ video {
   box-sizing: border-box;
 }
 
-input {
-  box-sizing: border-box;
-}
-
 ul,
 li {
   list-style-type: none;
@@ -96,6 +93,23 @@ li {
 body {
   height: 100vh;
   font-size: 1.5rem;
+}
+
+.no-display {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.information {
+  padding: 2rem 0;
+}
+
+.error-message {
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .page-wrapper {
@@ -167,10 +181,6 @@ body {
   max-height: 500px;
   width: 100%;
   overflow-y: auto;
-}
-
-.suggestions.hide {
-  display: none;
 }
 
 .suggestion {

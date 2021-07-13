@@ -6,6 +6,7 @@ const typesElement = document.getElementById("types");
 const suggestions = document.getElementById("suggestions");
 const searchBar = document.getElementById("search-bar");
 const pageWrapper = document.getElementById("page-wrapper");
+const errorMessage = document.getElementById("error-message");
 
 export {
   description,
@@ -16,4 +17,5 @@ export {
   suggestions,
   searchBar,
   pageWrapper,
+  errorMessage
 };

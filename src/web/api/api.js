@@ -11,7 +11,9 @@ async function getSuggestions(query) {
   if (response.ok) {
     return await response.json();
   } else {
-    console.error("Error: " + response.status);
+    if (response.status >= 400) {
+      throw new Error("Something went wrong.");
+    }
   }
   return [];
 }
@@ -19,11 +21,13 @@ async function getSuggestions(query) {
 async function getSearchResult(query) {
   let url = toUrlString("/api/search", { q: query });
   let response = await fetch(url);
-
   if (response.ok) {
+    if (response.status === 204) return null;
     return await response.json();
   } else {
-    console.error("Error: " + response.status);
+    if (response.status > 400) {
+      throw Error("Something went wrong.");
+    }
   }
   return null;
 }

@@ -9,7 +9,6 @@ import { hideErrorMessage, showErrorMessage } from "../components/ErrorMessage";
 function hideSuggestions() {
   suggestions.classList.add("no-display");
   autocomplete.highlight(undefined);
-  autocomplete.render([]);
 }
 
 function showSuggestions() {
@@ -32,13 +31,16 @@ function search(query) {
     query = autocomplete.getHighlightedSuggestion() || searchBar.value;
   }
   searchBar.value = query;
+  hideSuggestions();
   loadSearchResults(query)
     .then((data) => {
       renderSearchResult(data);
       hideErrorMessage();
     })
-    .catch((err) => showErrorMessage());
-  hideSuggestions();
+    .catch((err) => {
+      showErrorMessage();
+      autocomplete.render([]);
+    });
 }
 
 // Update autocomplete suggestions as user types

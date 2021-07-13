@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "reset.scss";
 @import "types.scss";
 
@@ -126,7 +127,7 @@ body {
 
 @media (min-width: 1200px) {
   .description {
-    max-width: $max-container-width / 2.5;
+    max-width: math.div($max-container-width, 2.5);
   }
 
   #results {
@@ -136,5 +137,9 @@ body {
     flex-grow: 1;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .image-wrapper {
+    width: 475px;
   }
 }

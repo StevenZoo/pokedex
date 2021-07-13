@@ -7,7 +7,8 @@
     "test": "jest",
     "start": "ts-node src/app.ts",
     "start-dev": "webpack -c webpack.dev.js && ts-node src/app.ts",
-    "ts-compile-check": "tsc -p tsconfig.json --noEmit"
+    "ts-compile-check": "tsc -p tsconfig.json --noEmit",
+    "build-styles": "sass src/web/styles/style.scss public/style.css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
   },
   "homepage": "https://github.com/StevenZoo/pokedex-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sass": "^1.35.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

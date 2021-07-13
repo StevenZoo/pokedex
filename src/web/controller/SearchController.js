@@ -2,8 +2,7 @@ import { autocomplete } from "../components/Autocomplete";
 import { searchBar, suggestions } from "../util/dom-references";
 import { loadAutocompleteSuggestions } from "../datastore/AutocompleteStore";
 import { loadSearchResults } from "../datastore/SearchStore";
-import { renderSearchResult } from "../components/SearchResult";
-import { hideErrorMessage, showErrorMessage } from "../components/ErrorMessage";
+import { renderSearchResult, renderSearchResultError } from "../components/SearchResult";
 
 // Hide drop down menu and remove highlighted items
 function hideSuggestions() {
@@ -35,10 +34,10 @@ function search(query) {
   loadSearchResults(query)
     .then((data) => {
       renderSearchResult(data);
-      hideErrorMessage();
     })
     .catch((err) => {
-      showErrorMessage();
+      console.log(err);
+      renderSearchResultError();
       autocomplete.render([]);
     });
 }

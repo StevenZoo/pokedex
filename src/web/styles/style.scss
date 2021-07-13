@@ -1,0 +1,145 @@
+@use "sass:math";
+@import "reset.scss";
+@import "types.scss";
+
+$max-container-width: 1200px;
+$drop-down-item-border: solid 1px rgb(233, 231, 231, 0.5);
+
+ul,
+li {
+  list-style-type: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.no-display {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.page-wrapper {
+  height: 100%;
+  min-width: 280px;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 1.25rem;
+  line-height: 1.5rem;
+  font-size: inherit;
+}
+
+.suggestion {
+  padding: 1.25rem;
+  line-height: 1.5rem;
+  background-color: white;
+
+  &:nth-child(odd) {
+    border-top: $drop-down-item-border;
+    border-bottom: $drop-down-item-border;
+  }
+
+  &:last-child {
+    border-bottom: $drop-down-item-border;
+  }
+
+  &.active {
+    border: solid 2px rgba(137, 203, 230, 0.8);
+  }
+
+  &:hover {
+    background-color: rgb(231, 224, 224);
+  }
+}
+
+.suggestions {
+  position: absolute;
+  max-height: calc(4rem * 5);
+  width: calc(min(100%, #{$max-container-width}) - 4rem);
+  overflow-y: auto;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.results {
+  padding-top: 2.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.information {
+  padding-bottom: 2rem;
+
+  .pokemon-id {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 3.75rem;
+  }
+
+  .types {
+    padding: 0.75rem 0;
+  }
+
+  .type {
+    display: inline-block;
+    padding: 5px 6px;
+    margin-right: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+  }
+
+  .description {
+    padding-top: 1rem;
+  }
+}
+
+.image-wrapper {
+  text-align: center;
+
+  .pokemon-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description {
+    max-width: math.div($max-container-width, 2.5);
+  }
+
+  #results {
+    width: 100%;
+    max-width: $max-container-width;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .image-wrapper {
+    width: 475px;
+  }
+}

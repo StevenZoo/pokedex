@@ -27,4 +27,13 @@ function renderSearchResult(data) {
   typesElement.replaceChildren(...types);
 }
 
-export { renderSearchResult };
+function renderSearchResultError(data) {
+  description.innerText = "Something went wrong. Please try again.";
+  nameElement.innerText = "";
+  pokemonId.innerText = "";
+  pokemonPicture.setAttribute("src", `#`);
+  pokemonPicture.classList.remove("hide");
+  typesElement.replaceChildren(...[]);
+}
+
+export { renderSearchResult, renderSearchResultError };

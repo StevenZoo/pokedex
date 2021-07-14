@@ -9,7 +9,7 @@ function clean(query: string): string {
 }
 
 function toAutocompleteResult(pokemon: Pokemon): AutocompleteResult {
-  return { id: pokemon.id, name: pokemon.name };
+  return { id: pokemon.id, name: pokemon.name, sprite: pokemon.sprite };
 }
 
 function autocomplete(query: string): Array<AutocompleteResult> {

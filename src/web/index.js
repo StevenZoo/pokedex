@@ -1,8 +1,8 @@
-import { pageWrapper, searchBar } from "./util/dom-references";
+import { page, searchBar } from "./util/dom-references";
 import { search, hideSuggestions, showSuggestions, handleDropdownNavigation } from "./controller/SearchController";
 
 // Hide dropdown on click
-pageWrapper.addEventListener("click", () => {
+page.addEventListener("click", () => {
   hideSuggestions();
 });
 

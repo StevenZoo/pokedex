@@ -1,7 +1,9 @@
 type Pokemon = {
+  id?: string;
   name?: string;
   description?: string;
   type: Array<string>;
+  sprite?: string;
 };
 
 type PokemonId = string;

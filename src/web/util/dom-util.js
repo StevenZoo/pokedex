@@ -11,12 +11,20 @@ function createElement(el, options = {}, classes = []) {
   return element;
 }
 
-function AutocompleteSuggestion(query, highlighted) {
+function AutocompleteSuggestion(data, highlighted) {
   let classList = ["suggestion"];
   if (highlighted) {
     classList.push("active");
   }
-  return createElement("li", { innerText: query, id: query }, classList);
+
+  let listElement = createElement("li", {}, classList);
+  let sprite = createElement("img", { src: data.sprite }, ["sprite", "vertical-center"]);
+  let text = createElement("span", { innerText: data.name }, ["vertical-center"]);
+
+  listElement.append(sprite);
+  listElement.append(text);
+
+  return listElement;
 }
 
 function Type(type) {

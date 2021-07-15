@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="page-wrapper" class="page-wrapper">
-      <div class="search-wrapper">
-        <input id="search-bar" type="text" name="pokemon" placeholder="Search for a Pokémon" autocomplete="off" />
-        <ul id="suggestions" class="suggestions no-display"></ul>
-      </div>
-      <div id="results" class="results">
-        <div class="information">
-          <div id="pokemon-id" class="pokemon-id"></div>
-          <h2 id="name" class="name"></h2>
-          <div id="types" class="types"></div>
-          <div id="description" class="description"></div>
+    <div id="page" class="page">
+      <div id="content" class="content">
+        <div class="search-wrapper">
+          <input id="search-bar" type="text" name="pokemon" placeholder="Search for a Pokémon" autocomplete="off" />
+          <ul id="suggestions" class="suggestions no-display"></ul>
         </div>
-        <div class="image-wrapper">
-          <img id="pokemon-image" class="pokemon-image" />
+        <div id="results" class="results">
+          <div class="information">
+            <div id="pokemon-id" class="pokemon-id"></div>
+            <h2 id="name" class="name"></h2>
+            <div id="types" class="types"></div>
+            <div id="description" class="description"></div>
+          </div>
+          <div class="image-wrapper">
+            <img id="pokemon-image" class="pokemon-image" />
+          </div>
         </div>
       </div>
     </div>

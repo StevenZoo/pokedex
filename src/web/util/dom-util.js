@@ -18,7 +18,7 @@ function AutocompleteSuggestion(data, highlighted) {
   }
 
   let listElement = createElement("li", {}, classList);
-  let sprite = createElement("img", { src: data.sprite }, ["vertical-center"]);
+  let sprite = createElement("img", { src: data.sprite }, ["sprite", "vertical-center"]);
   let text = createElement("span", { innerText: data.name }, ["vertical-center"]);
 
   listElement.append(sprite);

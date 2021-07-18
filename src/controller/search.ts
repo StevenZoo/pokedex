@@ -25,9 +25,7 @@ function autocomplete(query: string): Array<AutocompleteResult> {
 function search(query: string): Nullable<Pokemon> {
   query = clean(query);
   if (query === "") return null;
-  let pokemon = getPokemon(query);
-  if (pokemon != null) return pokemon;
-
+ 
   let closestMatches = searchService.findIdsWithMatchingPrefix(query);
   return getPokemon(closestMatches[0]);
 }

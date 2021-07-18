@@ -1,5 +1,5 @@
 type AutocompleteResult = {
-  id?: string;
+  id?: number;
   name?: string;
   sprite?: string;
 };

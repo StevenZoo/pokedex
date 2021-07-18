@@ -57,14 +57,14 @@ describe("Search ids by prefix", () => {
   });
 
   it("Common prefix", () => {
-    const expected = new Set(["1", "2", "4"]);
+    const expected = new Set([1, 2, 4]);
     const result = trie.searchIdsMatchingPrefix("gr");
 
     expect(result).toEqual(expected);
   });
 
   it("Common prefix", () => {
-    const expected = new Set(["1", "2", "4"]);
+    const expected = new Set([1, 2, 4]);
     const result = trie.searchIdsMatchingPrefix("gre");
 
     expect(result).toEqual(expected);
@@ -78,14 +78,14 @@ describe("Search ids by prefix", () => {
   });
 
   it("Exact match with no more words", () => {
-    const expected = new Set(["4"]);
+    const expected = new Set([4]);
     const result = trie.searchIdsMatchingPrefix("greeting");
 
     expect(result).toEqual(expected);
   });
 
   it("Exact match additional words", () => {
-    const expected = new Set(["2", "4"]);
+    const expected = new Set([2, 4]);
     const result = trie.searchIdsMatchingPrefix("greet");
 
     expect(result).toEqual(expected);
@@ -95,9 +95,9 @@ describe("Search ids by prefix", () => {
 
 function buildTrie(): Trie {
   const trie = new Trie();
-  trie.put("green", "1");
-  trie.put("greet", "2");
-  trie.put("glee", "3");
-  trie.put("greeting", "4");
+  trie.put("green", 1);
+  trie.put("greet", 2);
+  trie.put("glee", 3);
+  trie.put("greeting", 4);
   return trie;
 }

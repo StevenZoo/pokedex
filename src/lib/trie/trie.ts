@@ -34,12 +34,6 @@ class Trie {
     current!.id = id;
   }
 
-  public putAll(entries: Array<Array<string>>): void {
-    for (let [name, id] of entries) {
-      this.put(name, id);
-    }
-  }
-
   public searchKeysMatchingPrefix(prefix: string): Set<string> {
     let matches: Set<string> = new Set();
     this.collect(this._get(this.root, prefix, 0), prefix, matches);

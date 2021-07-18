@@ -1,6 +1,11 @@
 import database from "../database/database";
+import { Pokemon } from "../types/models";
 
 class PokemonDatastore {
+  public getAll(): Array<Pokemon> {
+    return Object.values(database.pokemon);
+  }
+
   public get(id: string) {
     return database.pokemon[id];
   }

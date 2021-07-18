@@ -1,4 +1,4 @@
-import { lookUpAllPokemonIds } from "../repository/pokemon-index";
+import { getAllPokemon } from "./pokemon";
 import Trie from "../lib/trie/trie";
 
 class SearchService {
@@ -10,8 +10,16 @@ class SearchService {
 
   private buildTrie() {
     const trie = new Trie();
-    const entries: Array<Array<string>> = lookUpAllPokemonIds();
-    trie.putAll(entries);
+    const entries = getAllPokemon();
+    for (let pokemon of entries) {
+      let id = pokemon.id!;
+      trie.put(pokemon.name!, pokemon.id!);
+
+      let alternatives = pokemon.alternatives || [];
+      for (let alternative of alternatives) {
+        trie.put(alternative, id);
+      }
+    }
     return trie;
   }
 

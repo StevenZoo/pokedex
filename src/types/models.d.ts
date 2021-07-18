@@ -4,6 +4,8 @@ type Pokemon = {
   description?: string;
   type: Array<string>;
   sprite?: string;
+  display?: string;
+  alternatives?: Array<string>;
 };
 
 type PokemonId = string;

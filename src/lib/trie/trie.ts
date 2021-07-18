@@ -16,13 +16,13 @@ class Trie {
     return this._get(node.children[offset], key, index + 1);
   }
 
-  public get(key: string): Nullable<string> {
+  public get(key: string): Nullable<number> {
     let node: Nullable<TrieNode> = this._get(this.root, key, 0);
     if (node === null) return null;
     return node.id;
   }
 
-  public put(key: string, id: string): void {
+  public put(key: string, id: number): void {
     let current: TrieNode = this.root;
     for (let i = 0; i < key.length; i++) {
       let offset: number = getAsciiCode(key, i);
@@ -48,14 +48,14 @@ class Trie {
     }
   }
 
-  public searchIdsMatchingPrefix(prefix: string): Set<string> {
-    let matches: Set<string> = new Set();
+  public searchIdsMatchingPrefix(prefix: string): Set<number> {
+    let matches: Set<number> = new Set();
     let start = this._get(this.root, prefix, 0);
     this.collectIds(this._get(this.root, prefix, 0), matches);
     return matches;
   }
 
-  private collectIds(node: Nullable<TrieNode>, set: Set<string>): void {
+  private collectIds(node: Nullable<TrieNode>, set: Set<number>): void {
     if (node == null) return;
     if (node.id != null) set.add(node.id);
     for (let i = 0; i < node.children.length; i++) {

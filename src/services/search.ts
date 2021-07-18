@@ -23,10 +23,10 @@ class SearchService {
     return trie;
   }
 
-  public findIdsWithMatchingPrefix(prefix: string): Array<string> {
+  public findIdsWithMatchingPrefix(prefix: string): Array<number> {
     if (prefix == null) return [];
 
-    let matchingIds: Set<string> = this.names.searchIdsMatchingPrefix(prefix);
+    let matchingIds: Set<number> = this.names.searchIdsMatchingPrefix(prefix);
     return [...matchingIds];
   }
 }

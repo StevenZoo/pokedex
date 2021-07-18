@@ -1,5 +1,5 @@
 type Pokemon = {
-  id?: string;
+  id?: number;
   name?: string;
   description?: string;
   type: Array<string>;

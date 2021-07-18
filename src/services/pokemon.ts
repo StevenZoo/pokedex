@@ -6,7 +6,7 @@ function getAllPokemon() {
   return pokemonDataStore.getAll();
 }
 
-function getPokemon(id: string): Nullable<Pokemon> {
+function getPokemon(id: number): Nullable<Pokemon> {
   if (id == null) return null;
   return pokemonDataStore.get(id);
 }

@@ -10,7 +10,7 @@ describe("Find whether a word is in trie", () => {
 
   it("Single character in trie", () => {
     let result = trie.get("a");
-    expect(result).toBe("5");
+    expect(result).toBe(5);
   });
 
   
@@ -26,7 +26,7 @@ describe("Find whether a word is in trie", () => {
 
   it("Word in trie", () => {
     let result = trie.get("green");
-    expect(result).toBe("1");
+    expect(result).toBe(1);
   });
 
   it("Word partially in tree", () => {
@@ -47,10 +47,10 @@ describe("Find whether a word is in trie", () => {
 
 function buildTrie(): Trie {
   const trie = new Trie();
-  trie.put("green", "1");
-  trie.put("greet", "2");
-  trie.put("greeting", "3");
-  trie.put("glee", "4");
-  trie.put("a", "5");
+  trie.put("green", 1);
+  trie.put("greet", 2);
+  trie.put("greeting", 3);
+  trie.put("glee", 4);
+  trie.put("a", 5);
   return trie;
 }

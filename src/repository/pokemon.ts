@@ -6,7 +6,7 @@ class PokemonDatastore {
     return Object.values(database.pokemon);
   }
 
-  public get(id: string) {
+  public get(id: number) {
     return database.pokemon[id];
   }
 }

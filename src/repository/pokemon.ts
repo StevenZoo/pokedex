@@ -1,13 +1,21 @@
-import database from "../database/database";
-import { Pokemon } from "../types/models";
+import { get } from "../database/dynamo-db-client";
+import { getNamesIndex } from "../database/s3-client";
+import { Pokemon, PokemonId } from "../types/models";
+import fs from "fs";
 
 class PokemonDatastore {
-  public getAll(): Array<Pokemon> {
-    return Object.values(database.pokemon);
+  public getNamesIndex(): Promise<Record<string, PokemonId>> {
+    return fs.promises
+      .readFile("src/data/index.json", "utf-8")
+      .then((data) => JSON.parse(data))
+      .catch((err) => {
+        console.log("No local index found. Fetching from S3 bucket.");
+        return getNamesIndex();
+      });
   }
 
-  public get(id: number) {
-    return database.pokemon[id];
+  public get(id: number): Promise<Pokemon> {
+    return get(id);
   }
 }
 

@@ -12,20 +12,24 @@ function toAutocompleteResult(pokemon: Pokemon): AutocompleteResult {
   return { id: pokemon.id, name: pokemon.name, sprite: pokemon.sprite };
 }
 
-function autocomplete(query: string): Array<AutocompleteResult> {
+async function autocomplete(query: string): Promise<Array<AutocompleteResult>> {
   query = clean(query);
   if (query === "") return [];
-  return searchService
-    .findIdsWithMatchingPrefix(query)
-    .map((id) => getPokemon(id))
-    .map((pokemon) => toAutocompleteResult(pokemon!))
-    .sort((a, b) => a.name!.localeCompare(b.name!));
+  const matchingPokemon = searchService.findIdsWithMatchingPrefix(query).map((id) =>
+    getPokemon(id).then((pokemon) => {
+      return toAutocompleteResult(pokemon!);
+    })
+  );
+
+  return Promise.all(matchingPokemon).then((matches) => {
+    return matches.sort((a, b) => a.name!.localeCompare(b.name!));
+  });
 }
 
-function search(query: string): Nullable<Pokemon> {
+async function search(query: string): Promise<Nullable<Pokemon>> {
   query = clean(query);
   if (query === "") return null;
- 
+
   let closestMatches = searchService.findIdsWithMatchingPrefix(query);
   return getPokemon(closestMatches[0]);
 }

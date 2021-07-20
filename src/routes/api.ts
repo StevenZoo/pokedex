@@ -1,28 +1,33 @@
 import express from "express";
+import { nextTick } from "process";
 import { autocomplete, search } from "../controller/search";
 
 let router = express.Router();
 
-router.get("/autocomplete", (req, res) => {
+router.get("/autocomplete", (req, res, next) => {
   let query: string = req.query.q as string;
   if (query === undefined) {
     res.sendStatus(400);
     return;
   }
 
-  let results = autocomplete(query);
-  res.send(results);
+  autocomplete(query).then((results) => {
+    res.send(results);
+    next();
+  });
 });
 
-router.get("/search", (req, res) => {
+router.get("/search", (req, res, next) => {
   let query: string = req.query.q as string;
   if (query === undefined) {
     res.sendStatus(400);
     return;
   }
 
-  let result = search(query);
-  res.send(result);
+  search(query).then((result) => {
+    res.send(result);
+    next();
+  });
 });
 
 module.exports = router;

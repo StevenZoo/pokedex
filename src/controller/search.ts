@@ -15,14 +15,10 @@ function toAutocompleteResult(pokemon: Pokemon): AutocompleteResult {
 async function autocomplete(query: string): Promise<Array<AutocompleteResult>> {
   query = clean(query);
   if (query === "") return [];
-  const matchingPokemon = searchService.findIdsWithMatchingPrefix(query).map((id) =>
-    getPokemon(id).then((pokemon) => {
-      return toAutocompleteResult(pokemon!);
-    })
-  );
+  const matchingPokemon = searchService.findIdsWithMatchingPrefix(query).map((id) => getPokemon(id));
 
   return Promise.all(matchingPokemon).then((matches) => {
-    return matches.sort((a, b) => a.name!.localeCompare(b.name!));
+    return matches.map((pokemon) => toAutocompleteResult(pokemon!)).sort((a, b) => a.name!.localeCompare(b.name!));
   });
 }
 

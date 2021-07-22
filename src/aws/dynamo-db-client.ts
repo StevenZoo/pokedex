@@ -1,4 +1,6 @@
 const AWS = require("aws-sdk");
+import { isEmptyObject } from "../util/util";
+
 const docClient = new AWS.DynamoDB.DocumentClient();
 
 async function get(id: number) {
@@ -8,7 +10,7 @@ async function get(id: number) {
     .get(params)
     .promise()
     .then((result: Record<string, any>) => {
-      if (result == null) return null;
+      if (result == null || isEmptyObject(result)) return null;
       return result["Item"];
     });
 }
@@ -20,7 +22,7 @@ async function queryByName(name: string) {
     .query(params)
     .promise()
     .then((result: Record<string, any>) => {
-      if (result == null) return null;
+      if (result == null || isEmptyObject(result)) return null;
       return result["Item"];
     });
 }

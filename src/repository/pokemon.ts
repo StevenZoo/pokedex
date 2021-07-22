@@ -1,5 +1,5 @@
-import { get } from "../database/dynamo-db-client";
-import { getNamesIndex } from "../database/s3-client";
+import { get } from "../aws/dynamo-db-client";
+import { getNamesIndex } from "../aws/s3-client";
 import { Pokemon, PokemonId } from "../types/models";
 import fs from "fs";
 

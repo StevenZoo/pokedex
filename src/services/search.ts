@@ -1,26 +1,20 @@
-import { getAllPokemon } from "./pokemon";
+import { getNamesIndex } from "./pokemon";
 import Trie from "../lib/trie/trie";
 
 class SearchService {
   private names: Trie;
 
   constructor() {
-    this.names = this.buildTrie();
+    this.names = new Trie();
+    this.populateTrie();
   }
 
-  private buildTrie() {
-    const trie = new Trie();
-    const entries = getAllPokemon();
-    for (let pokemon of entries) {
-      let id = pokemon.id!;
-      trie.put(pokemon.name!, pokemon.id!);
-
-      let alternatives = pokemon.alternatives || [];
-      for (let alternative of alternatives) {
-        trie.put(alternative, id);
+  private populateTrie() {
+    return getNamesIndex().then((index) => {
+      for (let [name, id] of Object.entries(index)) {
+        this.names.put(name, id);
       }
-    }
-    return trie;
+    });
   }
 
   public findIdsWithMatchingPrefix(prefix: string): Array<number> {

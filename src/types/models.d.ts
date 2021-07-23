@@ -8,7 +8,7 @@ type Pokemon = {
   alternatives?: Array<string>;
 };
 
-type PokemonId = string;
+type PokemonId = number;
 type PokemonName = string;
 
 export { Pokemon, PokemonId, PokemonName };

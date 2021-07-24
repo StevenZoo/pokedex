@@ -1,5 +1,4 @@
 import express from "express";
-import { nextTick } from "process";
 import { autocomplete, search } from "../controller/search";
 
 let router = express.Router();
@@ -11,10 +10,12 @@ router.get("/autocomplete", (req, res, next) => {
     return;
   }
 
-  autocomplete(query).then((results) => {
-    res.send(results);
-    next();
-  });
+  autocomplete(query)
+    .then((results) => {
+      res.send(results);
+      next();
+    })
+    .catch(next);
 });
 
 router.get("/search", (req, res, next) => {
@@ -24,10 +25,12 @@ router.get("/search", (req, res, next) => {
     return;
   }
 
-  search(query).then((result) => {
-    res.send(result);
-    next();
-  });
+  search(query)
+    .then((result) => {
+      res.send(result);
+      next();
+    })
+    .catch(next);
 });
 
 module.exports = router;

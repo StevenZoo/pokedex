@@ -8,7 +8,8 @@
     "start": "ts-node src/app.ts",
     "start-dev": "webpack -c webpack.dev.js && ts-node src/app.ts",
     "ts-compile-check": "tsc -p tsconfig.json --noEmit",
-    "build-styles": "sass src/web/styles/style.scss public/style.css"
+    "build-styles-dev": "sass src/web/styles/style.scss public/style.css",
+    "build-styles": "sass src/web/styles/style.scss public/style.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^16.0.0",
     "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
     "core-js": "^3.15.2",
     "husky": "^7.0.0",
     "jest": "^27.0.6",
